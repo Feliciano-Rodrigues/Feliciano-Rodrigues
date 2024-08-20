@@ -7,17 +7,16 @@
       Estudante
   FAP - (Formação Acelerada em Programação do Softex Pernambuco.) 
 
-   <div id="badges">
+  <div id="badges">
   <a href = "https://github.com/risoflorais">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
   <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
   <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
   </div>
-   <div>
 
   ---
-  
+  <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="python" alt="python" width="40" height="40"/>&nbsp;
@@ -31,8 +30,8 @@
   ---
 
   <div align = "left">
-  <img height = "120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Feliciano-Rodrigues&show_icons=true&theme=bear&count_private=true" align = "left"/>
-  <img height = "120em" src="https://github-readme-stats.vercel.app/api?username=Feliciano-Rodrigues&show_icons=true&show_icons=true&theme=bear&count_private=true" align = "center" />
+  <img height = "120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Feliciano-Rodrigues&show_icons=true&theme=onedark&count_private=true" align = "left"/>
+  <img height = "120em" src="https://github-readme-stats.vercel.app/api?username=Feliciano-Rodrigues&show_icons=true&show_icons=true&theme=onedark&count_private=true" align = "center" />
   </div>
 
   ---
