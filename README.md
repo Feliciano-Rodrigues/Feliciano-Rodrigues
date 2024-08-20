@@ -24,10 +24,7 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="css3" alt="css3" width="40" height="40"/>&nbsp;
   </div>
   
-
   ---
-  
-  ![Snake animation](https://github.com/Feliciano-Rodrigues/Feliciano-Rodrigues/blob/output/github-contribution-grid-snake.svg)
 
   <div align = "left">
   <img height = "130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Feliciano-Rodrigues&show_icons=true&theme=onedark&count_private=true" align="left"/>
@@ -35,6 +32,8 @@
   </div>
 
   ---
+
+  ![Snake animation](https://github.com/Feliciano-Rodrigues/Feliciano-Rodrigues/blob/output/github-contribution-grid-snake.svg)
  
 
 
