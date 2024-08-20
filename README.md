@@ -34,7 +34,7 @@
   ---
   
   ![Snake animation](https://github.com/Feliciano-Rodrigues/Feliciano-Rodrigues/blob/output/github-contribution-grid-snake.svg)
-  ![Snake animation](https://github.com/Feliciano-Rodrigues/Feliciano-Rodrigues/blob/output/github-contribution-grid-snake.svg)
+ 
 
  
 
