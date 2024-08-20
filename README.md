@@ -1,8 +1,5 @@
   # ❤ Olá, bom ter você por aqui!
 
- ---
-
- 
   👨‍💻 Desenvolvedor Back End Python <br>
       Estudante
   FAP - (Formação Acelerada em Programação do Softex Pernambuco.) 
