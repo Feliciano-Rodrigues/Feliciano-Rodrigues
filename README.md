@@ -26,14 +26,13 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="css3" alt="css3" width="40" height="40"/>&nbsp;
   </div>
   
-  ---
   <img src = "dev.gif" widht="230px" height="230px" align="right" top="auto">
 
   ---
 
   <div align = "left">
-  <img height = "150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Feliciano-Rodrigues&show_icons=true&theme=bear&count_private=true" align = "left"/>
-  <img height = "150em" src="https://github-readme-stats.vercel.app/api?username=Feliciano-Rodrigues&show_icons=true&show_icons=true&theme=bear&count_private=true" align = "center" />
+  <img height = "120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Feliciano-Rodrigues&show_icons=true&theme=bear&count_private=true" align = "left"/>
+  <img height = "120em" src="https://github-readme-stats.vercel.app/api?username=Feliciano-Rodrigues&show_icons=true&show_icons=true&theme=bear&count_private=true" align = "center" />
   </div>
 
   ---
