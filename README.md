@@ -30,9 +30,9 @@
   <img height = "130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Feliciano-Rodrigues&show_icons=true&theme=onedark&count_private=true" align="left"/>
   <img height = "130em" src="https://github-readme-stats.vercel.app/api?username=Feliciano-Rodrigues&show_icons=true&show_icons=true&theme=onedark&count_private=true" align="center" />
   </div>
-
+  
   ---
-
+  
   ![Snake animation](https://github.com/Feliciano-Rodrigues/Feliciano-Rodrigues/blob/output/github-contribution-grid-snake.svg)
  
 
