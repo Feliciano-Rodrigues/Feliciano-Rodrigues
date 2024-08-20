@@ -27,8 +27,8 @@
   ---
 
   <div align = "left">
-  <img height = "200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Feliciano-Rodrigues&show_icons=true&theme=onedark&count_private=true" align="left"/>
-  <img height = "200em" src="https://github-readme-stats.vercel.app/api?username=Feliciano-Rodrigues&show_icons=true&show_icons=true&theme=onedark&count_private=true" align="center" />
+  <img height = "130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Feliciano-Rodrigues&show_icons=true&theme=onedark&count_private=true" align="left"/>
+  <img height = "130em" src="https://github-readme-stats.vercel.app/api?username=Feliciano-Rodrigues&show_icons=true&show_icons=true&theme=onedark&count_private=true" align="center" />
   </div>
 
   ---
