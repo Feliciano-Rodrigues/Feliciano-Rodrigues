@@ -1,4 +1,4 @@
-  # ❤ Olá, bom ter você por aqui!
+  # ❤ Olá, bom ter você por aqui!  <img src = "dev.gif" widht="230px" height="230px" align="right" top="auto">
 
   👨‍💻 Desenvolvedor Back End Python <br>
       Estudante
@@ -13,6 +13,7 @@
   </div>
 
   ---
+  
   <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
@@ -22,7 +23,6 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="css3" alt="css3" width="40" height="40"/>&nbsp;
   </div>
   
-  <img src = "dev.gif" widht="230px" height="230px" align="right" top="auto">
 
   ---
 
