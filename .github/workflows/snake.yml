@@ -18,18 +18,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Explicitamente usando Node.js 20
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run the snake script
-        run: node generate_snake.js
+      - name: Generate the snake GIF
+        run: node generate_snake_gif.js
 
       - name: Commit and push changes
         run: |
-          git config --local feliciano.rodrigues16062012 "actions@github.com"
+          git config --local user.email "actions@github.com"
           git config --local Feliciano-Rodrigues "GitHub Actions"
-          git add github-contribution-grid-snake.svg
-          git commit -m "Generated snake animation grid"
+          git add github-contribution-grid-snake.gif
+          git commit -m "Generated snake animation GIF"
           git push
