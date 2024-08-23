@@ -29,8 +29,8 @@ jobs:
 
       - name: Push snake output to the repository
         run: |
-          git config --local feliciano.rodrigues16062012 "actions@github.com"
-          git config --local Feliciano-Rodrigues "GitHub Actions"
+          git config --local feliciano.rodrigues16062012"actions@github.com"
+          git config --local Feliciano-Rodrigues"GitHub Actions"
           git add ../../snake-output.html
           git commit -m "Add snake output"
           git push
