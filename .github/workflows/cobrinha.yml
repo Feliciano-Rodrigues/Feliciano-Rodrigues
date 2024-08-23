@@ -12,7 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3  # Usa Node.js 20 por padrão
+        uses: actions/checkout@v3  # Ação atualizada para versão mais recente
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Define explicitamente a versão do Node.js para 20
 
       - name: Generate snake game output
         run: |
