@@ -5,32 +5,75 @@ on:
     branches:
       - main
   schedule:
-    - cron: '20 * * *'  # Executa diariamente à meia-noite
+    - cron: '0 0 * * *'  # Executa diariamente à meia-noite
 
 jobs:
   generate-snake:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3  # Ação atualizada para versão mais recente
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'  # Define explicitamente a versão do Node.js para 20
+        uses: actions/checkout@v3
 
       - name: Generate snake game output
         run: |
-          git clone https://github.com/Platane/snk.git
-          cd snk
-          npm install
-          npm run build
-          cp dist/index.html ../../snake-output.html
+          echo "<html><body><canvas id='snakeCanvas' width='600' height='400'></canvas><script>
+          const canvas = document.getElementById('snakeCanvas');
+          const ctx = canvas.getContext('2d');
+          const snake = [{ x: 150, y: 150 }];
+          const snakeSize = 10;
+          let direction = 'right';
+          let food = { x: 300, y: 200 };
+          
+          function drawSnake() {
+              ctx.clearRect(0, 0, canvas.width, canvas.height);
+              ctx.fillStyle = 'green';
+              snake.forEach(part => {
+                  ctx.fillRect(part.x, part.y, snakeSize, snakeSize);
+              });
+              ctx.fillStyle = 'red';
+              ctx.fillRect(food.x, food.y, snakeSize, snakeSize);
+          }
+          
+          function moveSnake() {
+              const head = { ...snake[0] };
+              switch (direction) {
+                  case 'right':
+                      head.x += snakeSize;
+                      break;
+                  case 'left':
+                      head.x -= snakeSize;
+                      break;
+                  case 'up':
+                      head.y -= snakeSize;
+                      break;
+                  case 'down':
+                      head.y += snakeSize;
+                      break;
+              }
+              snake.unshift(head);
+              if (head.x === food.x && head.y === food.y) {
+                  food = {
+                      x: Math.floor(Math.random() * (canvas.width / snakeSize)) * snakeSize,
+                      y: Math.floor(Math.random() * (canvas.height / snakeSize)) * snakeSize
+                  };
+              } else {
+                  snake.pop();
+              }
+          }
+          
+          function gameLoop() {
+              moveSnake();
+              drawSnake();
+              setTimeout(gameLoop, 100);
+          }
+          
+          gameLoop();
+          </script></body></html>" > snake-output.html
 
       - name: Push snake output to the repository
         run: |
-          git config --local feliciano.rodrigues16062012@gmail.com"actions@github.com"
-          git config --local Feliciano-Rodrigues"GitHub Actions"
-          git add ../../snake-output.html
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add snake-output.html
           git commit -m "Add snake output"
           git push
