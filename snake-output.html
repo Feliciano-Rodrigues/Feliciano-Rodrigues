@@ -1,0 +1,53 @@
+<html><body><canvas id='snakeCanvas' width='600' height='400'></canvas><script>
+const canvas = document.getElementById('snakeCanvas');
+const ctx = canvas.getContext('2d');
+const snake = [{ x: 150, y: 150 }];
+const snakeSize = 10;
+let direction = 'right';
+let food = { x: 300, y: 200 };
+
+function drawSnake() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'green';
+    snake.forEach(part => {
+        ctx.fillRect(part.x, part.y, snakeSize, snakeSize);
+    });
+    ctx.fillStyle = 'red';
+    ctx.fillRect(food.x, food.y, snakeSize, snakeSize);
+}
+
+function moveSnake() {
+    const head = { ...snake[0] };
+    switch (direction) {
+        case 'right':
+            head.x += snakeSize;
+            break;
+        case 'left':
+            head.x -= snakeSize;
+            break;
+        case 'up':
+            head.y -= snakeSize;
+            break;
+        case 'down':
+            head.y += snakeSize;
+            break;
+    }
+    snake.unshift(head);
+    if (head.x === food.x && head.y === food.y) {
+        food = {
+            x: Math.floor(Math.random() * (canvas.width / snakeSize)) * snakeSize,
+            y: Math.floor(Math.random() * (canvas.height / snakeSize)) * snakeSize
+        };
+    } else {
+        snake.pop();
+    }
+}
+
+function gameLoop() {
+    moveSnake();
+    drawSnake();
+    setTimeout(gameLoop, 100);
+}
+
+gameLoop();
+</script></body></html>
