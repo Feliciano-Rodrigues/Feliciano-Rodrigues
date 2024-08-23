@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Executa diariamente à meia-noite
+    - cron: '20 * * *'  # Executa diariamente à meia-noite
 
 jobs:
   generate-snake:
@@ -29,7 +29,7 @@ jobs:
 
       - name: Push snake output to the repository
         run: |
-          git config --local feliciano.rodrigues16062012"actions@github.com"
+          git config --local feliciano.rodrigues16062012@gmail.com"actions@github.com"
           git config --local Feliciano-Rodrigues"GitHub Actions"
           git add ../../snake-output.html
           git commit -m "Add snake output"
