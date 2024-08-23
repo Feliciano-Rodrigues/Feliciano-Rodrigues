@@ -9,8 +9,8 @@ on:
 
 jobs:
   build:
-    name: Generate Snake Animation
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
@@ -20,19 +20,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Clone the snake repository
-        run: git clone https://github.com/Platane/snk.git
+      - name: Install dependencies
+        run: npm install
 
-      - name: Generate the snake grid with contributions
-        run: |
-          cd snk
-          npm install
-          npm run generate --output ../github-contribution-grid-snake.svg --user Feliciano-Rodrigues
+      - name: Run the snake script
+        run: node generate_snake.js
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add ../github-contribution-grid-snake.svg
+          git config --local feliciano.rodrigues16062012 "actions@github.com"
+          git config --local Feliciano-Rodrigues "GitHub Actions"
+          git add github-contribution-grid-snake.svg
           git commit -m "Generated snake animation grid"
           git push
